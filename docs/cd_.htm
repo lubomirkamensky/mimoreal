@@ -2,58 +2,81 @@
 <head>
 <meta http-equiv="Content-Language" content="cs">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-<title>Moje hudba</title>
-<base target="iframe">
+<title>HLAVONOŽEC - CD 2007-2025</title>
 <style>
   body {
     background-color: #808080;
     color: #FFFFFF;
     font-family: Verdana, sans-serif;
-    font-size: 14px;
-    margin: 0;
-  }
-  .container {
-    max-width: 900px;
-    padding-left: 20px; /* odsazení od levého okraje */
-    padding-top: 50px;
-  }
-  .container p {
-    margin: 4px 0 8px 0; /* nahoře 4px, dole 8px – jednotná mezera */
+    font-size: 14px; /* zvětšené písmo pro text */
+    margin: 20px;
   }
   a {
     color: #FFFFFF;
     text-decoration: none;
+    cursor: pointer;
   }
   a:hover {
     text-decoration: underline;
   }
+  .container {
+    max-width: 900px;
+  }
+  .cd-title b {
+    font-size: 18px; /* větší nadpis CD */
+  }
+  .no-margin {
+    margin: 0;
+    padding: 0;
+  }
+  .tracklist p {
+    margin: 4px 0;
+  }
+  #ytplayer {
+    display: none; /* iframe skrytý dokud se neklikne */
+    margin-top: 10px;
+  }
 </style>
+<script>
+  function showYouTube() {
+    var playerDiv = document.getElementById("ytplayer");
+    playerDiv.style.display = "block";
+    // Dynamicky vložíme iframe s autoplay
+    playerDiv.innerHTML = '<iframe width="560" height="315" src="https://www.youtube.com/embed/o8tRRJECGQY?autoplay=1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>';
+  }
+</script>
 </head>
 
 <body>
 <div class="container">
-  <p><b>Moje hudba by se stylově dala posoudit jako dark beatová.</b></p>
-  <p>Mírně temné tony i texty k tomu patrně nasvědčují.</p>
-  <p>Takže s chutí k poslechu!</p>
+  <div class="cd-title no-margin"><b>CD - HLAVONOŽEC /2007-2025/</b></div>
+  <br> <!-- prázdný řádek pod nadpisem -->
 
-  <!-- seznam skladeb -->
-  <p><a href="../2025_01_projectile.mp3">Projectile</a></p>
-  <p>Hlavou zeď prorazíš</p>
-  <p><a href="../mp3/Mimoreal_Songs_of_the_Machine_Jen_tak_si_brnknout.mp3">Jen tak si brnknout</a></p>
-  <p><a href="../mp3/Mimoreal_Songs_of_the_Machine_Hlavonozec.mp3">Hlavonožec</a></p>
-  <p><a target="_blank" href="../mp3/Mimoreal_Songs_of_the_Machine_Pravda.mp3">Pravda je krákoravý pták</a></p>
-  <p>Voda v krku</p>
-  <p>Blata</p>
-  <p>Havraní pole</p>
-  <p><a href="../mp3/Mimoreal_Songs_of_the_Machine_Vlekla_zalezitost.mp3">Vleklá záležitost</a></p>
-  <p><a href="../mp3/Mimoreal_Songs_of_the_Machine_Bosonoh.mp3">Bosonoh</a></p>
-  <p>Líza a já</p>
-  <p>Kandahar</p>
-  <p>Frank Furt</p>
-  <p>Batyskaf</p>
-  <p>Kuklus man</p>
-  <p><a href="../mp3/Mimoreal_Songs_of_the_Machine_Na_odchodnou.mp3">Na odchodnou</a></p>
-  <p><a href="../mp3/Mimoreal_Songs_of_the_Machine_Nic.mp3">Nic</a></p>
+  <!-- Projectile odkaz -->
+  <p class="no-margin">
+    <a onclick="showYouTube()">Projectile</a>
+  </p>
+  <div id="ytplayer"></div> <!-- iframe se vloží až po kliknutí -->
+
+  <div class="no-margin">Hlavou zeď prorazíš</div>
+
+  <div class="tracklist">
+    <p><a href="../mp3/Mimoreal_Songs_of_the_Machine_Jen_tak_si_brnknout.mp3">Jen tak si brnknout</a></p>
+    <p><a href="../mp3/Mimoreal_Songs_of_the_Machine_Hlavonozec.mp3">Hlavonožec</a></p>
+    <p><a target="_blank" href="../mp3/Mimoreal_Songs_of_the_Machine_Pravda.mp3">Pravda je krákoravý pták</a></p>
+    <p>Voda v krku</p>
+    <p>Blata</p>
+    <p>Havraní pole</p>
+    <p><a href="../mp3/Mimoreal_Songs_of_the_Machine_Vlekla_zalezitost.mp3">Vleklá záležitost</a></p>
+    <p><a href="../mp3/Mimoreal_Songs_of_the_Machine_Bosonoh.mp3">Bosonoh</a></p>
+    <p>Líza a já</p>
+    <p>Kandahar</p>
+    <p>Frank Furt</p>
+    <p>Batyskaf</p>
+    <p>Kuklus man</p>
+    <p><a href="../mp3/Mimoreal_Songs_of_the_Machine_Na_odchodnou.mp3">Na odchodnou</a></p>
+    <p><a href="../mp3/Mimoreal_Songs_of_the_Machine_Nic.mp3">Nic</a></p>
+  </div>
 </div>
 </body>
 </html>
