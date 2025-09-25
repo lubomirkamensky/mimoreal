@@ -1,36 +1,65 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html>
+<!DOCTYPE html>
+<html lang="cs">
 <head>
-<meta http-equiv="Content-Language" content="cs">
-<meta http-equiv="Content-Type" content="text/html; charset=windows-1250">
-<title>Mimoreal Songs of the Machine </title>
-<meta name="keywords" content="mimoreal, art rock">
-<meta name="Robots" content="ALL,FOLLOW">
+<meta charset="utf-8">
+<title>Mimoreal Songs of the Machine</title>
+<style>
+  /* celé pozadí s gradientem */
+  body {
+    margin: 0;
+    font-family: Verdana, sans-serif;
+    color: #FFFFFF;
+    background: linear-gradient(to bottom, #393939, #000000); /* tmavě šedá do černé */
+    min-height: 100vh; /* zajistí, že pozadí vyplní celou výšku okna */
+  }
 
-<font size="1" color="ffffff"> <style>a:link, a:visited {text-decoration: none}</style><style>a:link, a:visited {text-decoration: none}</style><style>a:link, a:visited {text-decoration: none}</style><style>a:link, a:visited {text-decoration: none}</style><style>a:link, a:visited {text-decoration: none}</style><style>a:link, a:visited {text-decoration: none}</style><style>a:link, a:visited {text-decoration: none}</style><style>a:link, a:visited {text-decoration: none}</style><style>a:link, a:visited {text-decoration: none}</style><style>a:link, a:visited {text-decoration: none}</style><style>a:link, a:visited {text-decoration: none}</style>
-<base target="iframe" href="http://mimoreal.made.cz/index.htm">
+  /* hlavní kontejner pro obsah */
+  .container {
+    max-width: 927px;
+    margin: 0 auto;
+    padding: 20px;
+    min-height: 900px; /* vyšší plocha */
+    box-sizing: border-box;
+  }
+
+  /* nadpis */
+  h1 {
+    color: #A0C4FF; /* světle kovová modř */
+    font-size: 28px;
+    margin-bottom: 20px;
+  }
+
+  /* menu */
+  nav a {
+    color: #808080;
+    text-decoration: none;
+    margin-right: 15px;
+  }
+  nav a:hover {
+    text-decoration: underline;
+  }
+
+  /* iframe pro obsah */
+  iframe {
+    width: 100%;
+    height: 500px;
+    border: 0;
+  }
+</style>
 </head>
+<body>
+<div class="container">
+  <h1>Mimoreal Songs of the Machine</h1>
 
+  <!-- menu -->
+  <nav>
+    <a href="cd_.htm" target="iframe">CD</a>
+    <a href="info_.htm" target="iframe">Info</a>
+    <a href="kontakt_.htm" target="iframe">Kontakt</a>
+  </nav>
 
-<body align="center" leftmargin="0" topmargin="0" bgcolor="#393939" scrolling="no" vlink="#FFFFFF" alink="#FFFFFF" text="#FFFFFF">
-
-
-<div align="center">
-
-
-<table border="0"  bordercolor="#000000" bordercolordark="#000000" bordercolorlight="#000000" cellpadding="8" width="927" bgcolor="#000000" height="623" cellspacing="0" background="web/images/Mimoreal-Songs-of-Machine.jpg">
-
-  <tr>
-
-
- <td align="center" width="911" height="623" background="web/images/Mimoreal-Songs-of-Machine_01.jpg"><blockquote>
-      <p align="left"><font face="Verdana" style="font-size: 12pt" color="#000000" size="1"><!-- BlueBoard.cz Pocitadlo --></font></font></font></font></font></font><script type="text/javascript" src="http://blueboard.cz/counter_1.php?jid=24sskemf004mem3bes4vfrkp837tp7"></script><!-- BlueBoard.cz Pocitadlo KONEC --></font></font></font>
-      <font face="Verdana" color="#808080" size="2"><a href="http://mimoreal.made.cz/cd_.htm"><font color="#808080">CD</font></a>&nbsp;&nbsp; '&nbsp;&nbsp; <a href="http://mimoreal.made.cz/info_.htm"><font color="#808080">info</font></a>&nbsp;&nbsp; '&nbsp;&nbsp;
-      <a href="http://mimoreal.made.cz/kontakt_.htm"><font color="#808080">kontakt</font></a>&nbsp;&nbsp; '&nbsp; </font></blockquote><font size="1" color="ffffff"><p align="center">
-   <br>
-   <font face="Verdana">
-   <iframe NAME="iframe" SRC="info_.htm" VALIGN="TOP"
-    FRAMEBORDER="0" FRAMESPACING="400" HEIGHT="384" MARGINHEIGHT="1" WIDTH="832" MARGINWIDTH="1"
-    SCROLLING="NOT" HSPACE="0" target="iframe"></iframe>
-   </font></font></td><p align="left"></table>
-<p align="left">&nbsp;<a href="http://www.najdouvas.cz"><img src="http://pocitadlo.najdouvas.cz/pocitadlo.php?v=5&amp;p2=B8B8B8&amp;c=616161&amp;t2=545454" border=0 alt="www.najdouvas.cz"
+  <!-- iframe pro načítání obsahu -->
+  <iframe name="iframe" src="info_.htm"></iframe>
+</div>
+</body>
+</html>
